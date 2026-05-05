@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 42 30% 98%;
+  --foreground: 214 24% 14%;
+  --muted: 200 18% 92%;
+  --muted-foreground: 210 10% 38%;
+  --border: 204 16% 84%;
+  --primary: 171 62% 26%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 45 90% 52%;
+  --destructive: 0 72% 48%;
+}
+
+.dark {
+  --background: 215 28% 9%;
+  --foreground: 40 22% 94%;
+  --muted: 213 22% 18%;
+  --muted-foreground: 212 12% 72%;
+  --border: 213 18% 25%;
+  --primary: 169 58% 42%;
+  --primary-foreground: 214 32% 10%;
+  --accent: 45 92% 58%;
+  --destructive: 0 68% 58%;
+}
+
+* { @apply border-border; }
+body { @apply bg-background text-foreground antialiased; letter-spacing: 0; }
+button, input, select, textarea { font: inherit; }
