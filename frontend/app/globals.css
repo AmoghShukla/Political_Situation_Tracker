@@ -3,29 +3,76 @@
 @tailwind utilities;
 
 :root {
-  --background: 42 30% 98%;
-  --foreground: 214 24% 14%;
-  --muted: 200 18% 92%;
-  --muted-foreground: 210 10% 38%;
-  --border: 204 16% 84%;
-  --primary: 171 62% 26%;
+  --background: 38 38% 97%;
+  --foreground: 222 24% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 24% 12%;
+  --muted: 32 24% 91%;
+  --muted-foreground: 221 11% 38%;
+  --border: 31 20% 82%;
+  --primary: 29 88% 44%;
   --primary-foreground: 0 0% 100%;
-  --accent: 45 90% 52%;
-  --destructive: 0 72% 48%;
+  --accent: 334 74% 46%;
+  --ring: 29 88% 44%;
+  --bjp: 29 91% 49%;
+  --ncp: 334 76% 48%;
+  --shivsena: 24 86% 63%;
+  --success: 152 58% 34%;
+  --warning: 37 82% 47%;
+  --info: 214 74% 44%;
+  --destructive: 0 68% 48%;
 }
 
 .dark {
-  --background: 215 28% 9%;
-  --foreground: 40 22% 94%;
-  --muted: 213 22% 18%;
-  --muted-foreground: 212 12% 72%;
-  --border: 213 18% 25%;
-  --primary: 169 58% 42%;
-  --primary-foreground: 214 32% 10%;
-  --accent: 45 92% 58%;
-  --destructive: 0 68% 58%;
+  --background: 222 28% 8%;
+  --foreground: 45 19% 94%;
+  --card: 222 24% 11%;
+  --card-foreground: 45 19% 94%;
+  --muted: 220 20% 17%;
+  --muted-foreground: 35 12% 72%;
+  --border: 220 18% 24%;
+  --primary: 29 90% 55%;
+  --primary-foreground: 222 32% 10%;
+  --accent: 334 72% 58%;
+  --ring: 29 90% 55%;
+  --bjp: 29 91% 56%;
+  --ncp: 334 76% 62%;
+  --shivsena: 24 86% 66%;
+  --success: 151 52% 45%;
+  --warning: 39 88% 57%;
+  --info: 211 78% 62%;
+  --destructive: 0 67% 58%;
 }
 
 * { @apply border-border; }
+html { scroll-behavior: smooth; }
 body { @apply bg-background text-foreground antialiased; letter-spacing: 0; }
 button, input, select, textarea { font: inherit; }
+
+::selection { background: hsl(var(--primary) / 0.18); }
+
+.dashboard-grid {
+  background-image:
+    linear-gradient(hsl(var(--border) / 0.42) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--border) / 0.42) 1px, transparent 1px),
+    radial-gradient(circle at 18% 12%, hsl(var(--bjp) / 0.10), transparent 26%),
+    radial-gradient(circle at 76% 18%, hsl(var(--ncp) / 0.08), transparent 24%),
+    radial-gradient(circle at 52% 86%, hsl(var(--shivsena) / 0.10), transparent 26%);
+  background-size: 28px 28px;
+}
+
+.coalition-strip {
+  background: linear-gradient(
+    90deg,
+    hsl(var(--bjp)) 0%,
+    hsl(var(--bjp)) 33%,
+    hsl(var(--shivsena)) 33%,
+    hsl(var(--shivsena)) 66%,
+    hsl(var(--ncp)) 66%,
+    hsl(var(--ncp)) 100%
+  );
+}
+
+.text-balance {
+  text-wrap: balance;
+}

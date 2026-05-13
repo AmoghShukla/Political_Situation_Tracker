@@ -1,0 +1,59 @@
+[
+  {
+    "id": "devendra-fadnavis",
+    "name": "Devendra Fadnavis",
+    "party": "BJP",
+    "partyColor": "bjp",
+    "role": "Chief Minister",
+    "portfolio": ["Home", "General Administration", "Law and Judiciary"],
+    "swornIn": "2024-12-05",
+    "image": {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Devendra_fadnavis.png",
+      "alt": "Portrait of Devendra Fadnavis",
+      "credit": "Bollywood Hungama, CC BY 3.0, via Wikimedia Commons",
+      "sourceId": "commons-fadnavis-portrait"
+    },
+    "profile": "Chief Minister leading the Mahayuti/NDA government for the 2024-2029 assembly term.",
+    "indicators": [
+      { "label": "Tracked promises under office", "value": 84 },
+      { "label": "Departments with public dashboards", "value": 9 },
+      { "label": "Cabinet decisions indexed", "value": 126 }
+    ],
+    "announcements": ["Investment acceleration", "Urban infrastructure push", "Law and order modernization"],
+    "sources": ["maha-cm-swearing-2024", "the-hindu-maha-cabinet-2024", "commons-fadnavis-portrait"]
+  },
+  {
+    "id": "eknath-shinde",
+    "name": "Eknath Shinde",
+    "party": "Shiv Sena",
+    "partyColor": "shivsena",
+    "role": "Deputy Chief Minister",
+    "portfolio": ["Urban Development", "Housing"],
+    "swornIn": "2024-12-05",
+    "profile": "Deputy Chief Minister with major urban infrastructure and redevelopment responsibilities tracked here.",
+    "indicators": [
+      { "label": "Urban projects tracked", "value": 33 },
+      { "label": "Redevelopment items", "value": 14 },
+      { "label": "Delayed milestones", "value": 8 }
+    ],
+    "announcements": ["Metro expansion", "Coastal connectivity", "Redevelopment pipeline"],
+    "sources": ["maha-cm-swearing-2024", "the-hindu-maha-cabinet-2024"]
+  },
+  {
+    "id": "sunetra-pawar",
+    "name": "Sunetra Pawar",
+    "party": "NCP",
+    "partyColor": "ncp",
+    "role": "Deputy Chief Minister",
+    "portfolio": ["Planning"],
+    "swornIn": "2026-01-31",
+    "profile": "Deputy Chief Minister responsible for budget, finance, and fiscal implementation monitoring.",
+    "indicators": [
+      { "label": "Budget lines tracked", "value": 58 },
+      { "label": "District outlay items", "value": 36 },
+      { "label": "Fiscal indicators", "value": 11 }
+    ],
+    "announcements": ["Budget implementation reviews", "Fiscal management", "District planning outlays"],
+    "sources": ["maha-cm-swearing-2024", "prs-maha-budget-2025"]
+  }
+]

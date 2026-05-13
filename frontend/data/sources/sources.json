@@ -1,0 +1,112 @@
+[
+  {
+    "id": "commons-fadnavis-portrait",
+    "title": "Devendra Fadnavis portrait",
+    "publisher": "Wikimedia Commons / Bollywood Hungama",
+    "url": "https://commons.wikimedia.org/wiki/File:Devendra_fadnavis.png",
+    "type": "image",
+    "credibility": "secondary",
+    "publishedAt": "2017-01-28",
+    "summary": "CC BY 3.0 portrait used with attribution to Bollywood Hungama via Wikimedia Commons."
+  },
+  {
+    "id": "eci-2024-results",
+    "title": "Election Commission of India: Maharashtra Assembly Election 2024 Results",
+    "publisher": "Election Commission of India",
+    "url": "https://results.eci.gov.in/ResultAcGenNov2024/partywiseresult-S13.htm",
+    "type": "official",
+    "credibility": "primary",
+    "publishedAt": "2024-11-23",
+    "summary": "Official party-wise election result table for the 2024 Maharashtra Legislative Assembly election."
+  },
+  {
+    "id": "maha-cm-swearing-2024",
+    "title": "Devendra Fadnavis sworn in as Maharashtra Chief Minister",
+    "publisher": "Maharashtra Raj Bhavan",
+    "url": "https://rajbhavan-maharashtra.gov.in/en/",
+    "type": "official",
+    "credibility": "primary",
+    "publishedAt": "2024-12-05",
+    "summary": "Swearing-in record for the Chief Minister and Deputy Chief Ministers."
+  },
+  {
+    "id": "prs-maha-budget-2025",
+    "title": "Maharashtra Budget Analysis 2025-26",
+    "publisher": "PRS Legislative Research",
+    "url": "https://prsindia.org/budgets/states/maharashtra-budget-analysis-2025-26",
+    "type": "research",
+    "credibility": "secondary",
+    "publishedAt": "2025-03-10",
+    "summary": "Independent budget analysis with receipts, expenditure, deficit, and sectoral allocations."
+  },
+  {
+    "id": "maha-budget-speech-2025",
+    "title": "Maharashtra Budget Speech 2025-26",
+    "publisher": "Government of Maharashtra Finance Department",
+    "url": "https://finance.maharashtra.gov.in/",
+    "type": "official",
+    "credibility": "primary",
+    "publishedAt": "2025-03-10",
+    "summary": "State budget speech and finance department documents."
+  },
+  {
+    "id": "mahayuti-manifesto-2024",
+    "title": "Mahayuti Maharashtra Assembly Election Manifesto 2024",
+    "publisher": "Mahayuti campaign material",
+    "url": "https://www.bjp.org/",
+    "type": "manifesto",
+    "credibility": "primary-claim",
+    "publishedAt": "2024-11-10",
+    "summary": "Election promise source. Claims require separate documentary evidence before completion status."
+  },
+  {
+    "id": "pib-mthl-2024",
+    "title": "Prime Minister inaugurates Atal Bihari Vajpayee Sewri-Nhava Sheva Atal Setu",
+    "publisher": "Press Information Bureau",
+    "url": "https://pib.gov.in/",
+    "type": "official",
+    "credibility": "primary",
+    "publishedAt": "2024-01-12",
+    "summary": "Official release on Mumbai Trans Harbour Link inauguration."
+  },
+  {
+    "id": "mmrda-coastal-road",
+    "title": "Mumbai Coastal Road and connector project updates",
+    "publisher": "MMRDA / MCGM",
+    "url": "https://mmrda.maharashtra.gov.in/",
+    "type": "official",
+    "credibility": "primary",
+    "publishedAt": "2025-01-01",
+    "summary": "Official project pages and updates for coastal road connectors and related urban transport work."
+  },
+  {
+    "id": "cag-maharashtra",
+    "title": "CAG State Finance Audit Reports: Maharashtra",
+    "publisher": "Comptroller and Auditor General of India",
+    "url": "https://cag.gov.in/en/audit-report?state=maharashtra",
+    "type": "audit",
+    "credibility": "primary",
+    "publishedAt": "2025-01-01",
+    "summary": "Audit reports used for finance, expenditure, and implementation checks."
+  },
+  {
+    "id": "the-hindu-maha-cabinet-2024",
+    "title": "Maharashtra cabinet expansion and portfolio coverage",
+    "publisher": "The Hindu",
+    "url": "https://www.thehindu.com/news/national/maharashtra/",
+    "type": "news",
+    "credibility": "verified-media",
+    "publishedAt": "2024-12-15",
+    "summary": "News coverage used as secondary evidence where official records are pending."
+  },
+  {
+    "id": "indian-express-maha-promises",
+    "title": "Maharashtra election promises and implementation reporting",
+    "publisher": "The Indian Express",
+    "url": "https://indianexpress.com/section/cities/mumbai/",
+    "type": "news",
+    "credibility": "verified-media",
+    "publishedAt": "2025-01-01",
+    "summary": "Trusted reporting for political announcements, implementation delays, and ground reports."
+  }
+]

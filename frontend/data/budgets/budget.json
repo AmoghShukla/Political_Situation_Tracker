@@ -1,0 +1,40 @@
+{
+  "fiscalYear": "2025-26",
+  "currency": "INR crore",
+  "lastUpdated": "2026-05-01",
+  "summary": {
+    "totalExpenditure": 699000,
+    "revenueReceipts": 493000,
+    "capitalOutlay": 85000,
+    "fiscalDeficit": 136000,
+    "debtToGsdpPercent": 18.4
+  },
+  "departments": [
+    { "name": "Urban Development", "allocation": 68500, "spent": 38200, "capitalShare": 58 },
+    { "name": "Agriculture", "allocation": 41200, "spent": 20500, "capitalShare": 21 },
+    { "name": "Women and Child Development", "allocation": 38400, "spent": 14700, "capitalShare": 6 },
+    { "name": "Public Works", "allocation": 52200, "spent": 31100, "capitalShare": 72 },
+    { "name": "Water Supply", "allocation": 22600, "spent": 15120, "capitalShare": 64 },
+    { "name": "Health", "allocation": 28400, "spent": 17350, "capitalShare": 25 },
+    { "name": "School Education", "allocation": 73500, "spent": 42200, "capitalShare": 11 },
+    { "name": "Home", "allocation": 30200, "spent": 17640, "capitalShare": 18 }
+  ],
+  "trends": [
+    { "year": "2021-22", "debt": 608000, "fiscalDeficit": 79500, "capex": 51000 },
+    { "year": "2022-23", "debt": 645000, "fiscalDeficit": 88600, "capex": 61800 },
+    { "year": "2023-24", "debt": 711000, "fiscalDeficit": 111000, "capex": 72400 },
+    { "year": "2024-25", "debt": 782000, "fiscalDeficit": 128000, "capex": 80100 },
+    { "year": "2025-26", "debt": 856000, "fiscalDeficit": 136000, "capex": 85000 }
+  ],
+  "districtDistribution": [
+    { "district": "Mumbai", "allocation": 28500, "utilization": 64 },
+    { "district": "Pune", "allocation": 24200, "utilization": 59 },
+    { "district": "Nagpur", "allocation": 18100, "utilization": 61 },
+    { "district": "Nashik", "allocation": 12800, "utilization": 53 },
+    { "district": "Aurangabad", "allocation": 11900, "utilization": 48 },
+    { "district": "Thane", "allocation": 20700, "utilization": 57 },
+    { "district": "Raigad", "allocation": 14800, "utilization": 62 },
+    { "district": "Yavatmal", "allocation": 8200, "utilization": 44 }
+  ],
+  "sources": ["prs-maha-budget-2025", "maha-budget-speech-2025", "cag-maharashtra"]
+}

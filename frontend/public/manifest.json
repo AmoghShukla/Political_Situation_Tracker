@@ -1,0 +1,17 @@
+{
+  "name": "Maharashtra NDA Promise & Performance Tracker",
+  "short_name": "MH Tracker",
+  "description": "Evidence-backed public accountability ledger for Maharashtra 2024-2029.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f7f2",
+  "theme_color": "#155e63",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

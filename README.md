@@ -1,65 +1,82 @@
-# Political Current Situation Tracker
+# Maharashtra NDA Promise & Performance Tracker
 
-Production-oriented full-stack scaffold for political intelligence, election tracking, RBAC-protected data management, and analytics.
+Production-grade civic-tech website for tracking Maharashtra NDA government promises, budgets, projects, evidence, districts, leaders, and citizen submissions for the 2024-2029 term.
 
-## Stack
+## Folder Structure
 
-Backend: FastAPI, async SQLAlchemy 2.0, PostgreSQL, Alembic, Pydantic v2, JWT access/refresh rotation, Redis readiness, structured logging, pytest, Gunicorn/Uvicorn.
-
-Frontend: Next.js 15, TypeScript, TailwindCSS, ShadCN-style local UI primitives, TanStack Query, Zustand, Axios, Recharts, protected routes, RBAC-aware rendering.
-
-## Architecture
-
-The backend uses layered modules under `backend/app`: API routers, dependencies, repositories, services, schemas, models, permissions, middleware, and database configuration. Data access is async and repository-backed; write endpoints use explicit transactions and audit logging hooks. RBAC is enforced at route dependency level and mirrored in the frontend through `PermissionGate` and permission-aware navigation.
-
-The frontend uses route groups under `frontend/app/(protected)`, shared layout shell, API services, query functions, Zustand auth persistence, and reusable table/input/button primitives. Admin-only controls are hidden unless the logged-in role has the required permission.
-
-## Run Locally
-
-1. Copy backend environment values:
-
-```bash
-cp backend/.env.example backend/.env
+```text
+frontend/
+  app/
+    page.tsx
+    promises/page.tsx
+    projects/page.tsx
+    budget/page.tsx
+    evidence/page.tsx
+    districts/page.tsx
+    leaders/page.tsx
+    participate/page.tsx
+    methodology/page.tsx
+    reports/state-of-promises/page.mdx
+  components/
+    tracker/
+    ui/
+  data/
+    promises/promises.json
+    projects/projects.json
+    budgets/budget.json
+    leaders/leaders.json
+    districts/districts.json
+    sources/sources.json
+    schema.md
+  lib/
+    tracker-data.ts
+  public/
+    manifest.json
+    sw.js
+    icon.svg
 ```
 
-2. Start the platform:
+## Features
 
-```bash
-docker compose up --build
-```
+- Next.js 15 App Router, TypeScript, TailwindCSS, and shadcn-style primitives.
+- Framer Motion animated statistics.
+- Recharts budget and project analytics.
+- Static JSON database with schema documentation.
+- MDX report support.
+- Global search, filters, status badges, district filtering, and shareable URL anchors.
+- Responsive dashboard UI with light and dark mode.
+- SEO metadata, OpenGraph metadata, structured dataset schema, PWA manifest, and service worker.
+- Vercel-ready build.
 
-3. Open:
-
-- Frontend: `http://localhost:3000`
-- Backend API docs: `http://localhost:8000/docs`
-- NGINX entrypoint: `http://localhost:8080`
-
-Seeded admin defaults are in `backend/.env.example`.
-
-## Backend Commands
-
-```bash
-cd backend
-pip install -r requirements/dev.txt
-alembic upgrade head
-python -m app.db.seed
-pytest
-```
-
-## Frontend Commands
+## Local Development
 
 ```bash
 cd frontend
 npm install
 npm run dev
-npm run build
-npm test
 ```
 
-## Scalability Notes
+Open `http://localhost:3000`.
 
-The API is async end to end, uses PostgreSQL indexes for common search/filter paths, connection pooling for concurrent workloads, pagination on list endpoints, eager loading where response graphs need related data, Redis-ready infrastructure for cache/rate-limit expansion, and Gunicorn worker sizing for multi-process serving. For 1000+ concurrent users, deploy behind NGINX or a cloud load balancer, run multiple backend replicas, tune PostgreSQL pool sizes per replica, add Redis-backed rate limiting, and cache analytics aggregates with explicit invalidation on election-result writes.
+## Production Build
 
-## Security Notes
+```bash
+cd frontend
+npm run build
+npm run start
+```
 
-JWT access tokens are short-lived; refresh tokens rotate through `token_version`. Passwords are bcrypt hashed. CORS and secure headers are configured. SQL injection risk is controlled through SQLAlchemy parameterization. Secrets are environment-driven and should be supplied by a secret manager outside local development.
+## Vercel Deployment
+
+1. Import the repository in Vercel.
+2. Set the project root to `frontend`.
+3. Framework preset: `Next.js`.
+4. Build command: `npm run build`.
+5. Install command: `npm install`.
+6. Output directory: leave default.
+
+## Data Updates
+
+Edit JSON files in `frontend/data`. Each promise and project references source IDs from `frontend/data/sources/sources.json`.
+
+Completion status must follow the methodology in `frontend/data/schema.md`: claims are not marked completed without documentary evidence.
